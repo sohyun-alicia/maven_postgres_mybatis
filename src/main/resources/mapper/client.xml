@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.maven_postgres_mybatis.repository.ClientRepository">
     <select id="getAllClient" resultType="clientVo">
-        SELECT client_name, client_cellphone
-        from
+        SELECT id, name, cellphone
+        from client
     </select>
 </mapper>
